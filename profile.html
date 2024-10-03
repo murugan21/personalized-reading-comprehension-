@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Reading Comprehension Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="history.html">History</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>User Profile</h1>
+            <div id="auth-section">
+                <input type="text" id="username" placeholder="Username">
+                <input type="password" id="password" placeholder="Password">
+                <button id="loginBtn">Login</button>
+                <button id="signupBtn">Sign Up</button>
+            </div>
+            <textarea id="userInput" placeholder="Paste text here..." rows="10"></textarea>
+            <br>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <br>
+            <button id="submitBtn">Generate Questions</button>
+            <div id="output"></div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
